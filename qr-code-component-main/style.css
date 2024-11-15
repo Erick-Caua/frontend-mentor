@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(212, 45%, 89%);
+}
+.card{
+    width: 340px ;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.texto-primario{
+    font-size: 25px;
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+}
+.texto-secundario{
+    font-size: 17px;
+    font-weight: 400;
+    width: 300px;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+}
+
