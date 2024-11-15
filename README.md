@@ -1,3 +1,3 @@
 # frontend-mentor
- treinando front end
-  <a href="https://erick-caua.github.io/frontend-mentor/qr-code-component-main/">QRCODE Frontend Mentor</a>
+ treinando front end <br>
+  <a href="https://erick-caua.github.io/frontend-mentor/qr-code-component-main/"> Acesse QRCODE Frontend Mentor</a>
