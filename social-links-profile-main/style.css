@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+@font-face {
+    font-family: 'Inter-regular' ;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-bold' ;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold' ;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-900);
+    
+}
+
+.card{
+    width: 400px;
+    height: max-content;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+    gap: 15px;
+    cursor: context-menu;
+}
+
+img{
+    width: 25%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.name{
+    font-family: 'Inter-bold';
+    font-size: 1.5rem;
+}
+
+.address{
+    color: var(--Green);
+    font-family: 'Inter-SemiBold';
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+.about{
+    font-family: 'Inter-regular';
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    font-family: 'Inter-SemiBold';
+    cursor: pointer;
+}
+
+button:hover{
+    border: 1px solid var(--Green);
+    box-shadow: inset 1px 2px 20px var(--Green);
+}
+
+
+
+@media(max-width: 425px){
+    .card{
+        width: 320px;
+        padding: 20px;
+    }
+    img{
+        width: 35%;
+    }
+    .about{
+        margin-bottom: 10px;
+    }
+}
