@@ -44,7 +44,6 @@ body{
 
 .card{
     width: 400px;
-    height: max-content;
     padding: 40px;
     border-radius: 20px;
     background-color: var(--Grey-800);
