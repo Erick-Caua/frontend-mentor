@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+:root {
+
+    /*Primary*/
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+    --VeryDarkBlue-mainBG: hsl(217, 54%, 11%);
+    --VeryDarkBlue-cardBG: hsl(216, 50%, 16%);
+    --VeryDarkBlue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VeryDarkBlue-mainBG);
+}
+
+.card {
+    background-color: var(--VeryDarkBlue-cardBG);
+    width: 350px;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+
+/* Estiliza o contêiner da imagem */
+.container-img {
+    position: relative;
+    /* Define o contexto de posicionamento para os pseudo-elementos */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Estiliza a imagem principal */
+.main-img {
+    display: block;
+    width: 100%;
+    /* Ajusta o tamanho da imagem principal */
+    height: auto;
+    object-fit: cover;
+    /* Garante que a imagem cubra a área */
+    z-index: 1;
+}
+
+/* Pseudo-elemento para o fundo colorido */
+.container-img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centraliza o fundo colorido */
+    width: 100%;
+    /* Tamanho fixo do fundo colorido */
+    height: 100%;
+    /* Tamanho fixo do fundo colorido */
+    background-color: var(--Cyan);
+    /* Cor de fundo */
+    z-index: 0;
+    /* Coloca o fundo atrás da imagem */
+    opacity: 0;
+    /* Inicialmente invisível */
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    /* Suaviza a opacidade e o filtro */
+    filter: opacity(0.3);
+    /* Aplica transparência inicial */
+}
+
+/* Pseudo-elemento para a imagem de fundo */
+.container-img::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centraliza a imagem secundária */
+    width: 60px;
+    /* Tamanho fixo da imagem de fundo */
+    height: 60px;
+    /* Tamanho fixo da imagem de fundo */
+    background-image: url('../images/icon-view.svg');
+    /* Caminho da imagem secundária */
+    background-size: cover;
+    /* A imagem de fundo cobrirá toda a área */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    opacity: 0;
+    /* Inicialmente invisível */
+    z-index: 1;
+    /* Coloca a imagem secundária acima do fundo colorido */
+    transition: opacity 0.3s ease;
+    /* Suaviza a transição de visibilidade */
+}
+
+/* Torna a imagem secundária e o fundo colorido visíveis no hover */
+.container-img:hover::before,
+.container-img:hover::after {
+    opacity: 1;
+    /* Torna visível o fundo colorido e a imagem secundária */
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--White);
+
+    &:hover {
+        color: var(--Cyan);
+        cursor: pointer;
+    }
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--Softblue);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 1px solid var(--VeryDarkBlue-line);
+
+    div {
+        display: flex;
+        gap: 5px;
+    }
+
+    .value {
+        color: var(--Cyan);
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding-bottom: 10px;
+
+    .img-avatar {
+        width: 10%;
+        border: 1px solid var(--White);
+        border-radius: 50%;
+    }
+
+    a {
+        color: var(--White);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--Cyan);
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        
+    }
+}
+
+@media(max-width:360px){
+    .card{
+        width: 310px;
+        p{
+            font-size: 15px;
+        }
+    }
+}
