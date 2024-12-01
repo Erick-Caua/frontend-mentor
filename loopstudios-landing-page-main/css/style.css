@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --font-primary: "Alata";
+    --font-secundary: "Josefin Sans";
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    padding: 50px 150px;
+    color: var(--White);
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--font-primary);
+        font-size: 15px;
+        .logo-header {
+            width: 200px;
+        }
+        nav{
+            display: flex;
+            gap: 35px;
+        }
+        a{
+            color: var(--White);
+            text-decoration: none;
+        }
+    }
+
+    .icon-nav {
+        display: none;
+    }
+
+    p {
+        margin: 12% 0%;
+        padding: 40px;
+        font-family: var(--font-secundary);
+        font-weight: 300;
+        font-size: 4rem;
+        width: 600px;
+        border: 1px solid var(--White);
+    }
+
+
+
+}
