@@ -37,7 +37,13 @@ header {
         }
         a{
             color: var(--White);
+            height: 27px;
             text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: .6s;
+            &:hover{
+                border-bottom: 1px solid var(--White);
+            }
         }
     }
 
@@ -120,10 +126,12 @@ main{
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            align-items: center;
             .item{
                 width: 256px;
                 height: 450px;
                 position: relative;
+                background-repeat: no-repeat;
                 p{
                     text-transform: uppercase;
                     color: var(--White);
@@ -156,6 +164,30 @@ main{
                     color: black;
                 }
             }
+            .item-1{
+                background-image: url(../images/desktop/image-deep-earth.jpg);
+            }
+            .item-2{
+                background-image: url(../images/desktop/image-night-arcade.jpg);
+            }
+            .item-3{
+                background-image: url(../images/desktop/image-soccer-team.jpg);
+            }
+            .item-4{
+                background-image: url(../images/desktop/image-grid.jpg);
+            }
+            .item-5{
+                background-image: url(../images/desktop/image-from-above.jpg);
+            }
+            .item-6{
+                background-image: url(../images/desktop/image-pocket-borealis.jpg);
+            }
+            .item-7{
+                background-image: url(../images/desktop/image-curiosity.jpg);
+            }
+            .item-8{
+                background-image: url(../images/desktop/image-fisheye.jpg);
+            }
         }
     }
 }
@@ -166,4 +198,47 @@ footer{
     padding: 30px 150px;
     color: var(--Very-Dark-Gray);
     font-family: var(--font-primary);
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        img{
+            width: 200px;
+        }
+        nav{
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            color: var(--White);
+            text-decoration: none;
+            letter-spacing: 2px;
+            border-bottom: 1px solid transparent;
+            transition: .6s;
+            padding-bottom: 5px;
+            &:hover{
+                border-bottom: 1px solid var(--White);
+            }
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        div{
+            display: flex;
+            gap: 25px;
+            justify-content: end;
+            img{
+                border-bottom: 1px solid transparent;
+                transition: .6s;
+                padding-bottom: 5px;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 1px solid var(--White);
+                }
+
+            }
+        }
+    }
 }

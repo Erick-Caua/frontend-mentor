@@ -1,0 +1,115 @@
+@media(max-width: 1165px) {
+    header {
+        height: 450px;
+
+        p {
+            font-size: 3rem;
+            width: 450px;
+        }
+    }
+
+    main {
+        .interactive-vr {
+            article {
+                padding: 40px 0 0 40px;
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    line-height: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .creations {
+            .article-itens {
+                flex-direction: column;
+                .item {
+                    width: 100%;
+                    height: 240px;
+                    background-size: cover;
+                }
+
+                .item-1 {
+                    background-image: url(../images/mobile/image-deep-earth.jpg);
+                }
+
+                .item-2 {
+                    background-image: url(../images/mobile/image-night-arcade.jpg);
+                }
+
+                .item-3 {
+                    background-image: url(../images/mobile/image-soccer-team.jpg);
+                }
+
+                .item-4 {
+                    background-image: url(../images/mobile/image-grid.jpg);
+                }
+
+                .item-5 {
+                    background-image: url(../images/mobile/image-from-above.jpg);
+                }
+
+                .item-6 {
+                    background-image: url(../images/mobile/image-pocket-borealis.jpg);
+                }
+
+                .item-7 {
+                    background-image: url(../images/mobile/image-curiosity.jpg);
+
+                }
+
+                .item-8 {
+                    background-image: url(../images/mobile/image-fisheye.jpg);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    header{
+        padding: 50px;
+    }
+    main {
+        padding: 50px;
+        
+        .interactive-vr {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            article {
+                position: static;
+                padding: 30px 0 0 0;
+
+                h1 {
+                    font-size: 3rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+        .creations{
+            margin-top: 50px;
+        }
+    }
+    footer{
+        padding: 50px;
+        flex-direction: column;
+        gap: 20px;
+        .links{
+            div{
+                justify-content: start;
+            }
+        }
+    }
+
+}
