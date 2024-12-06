@@ -97,17 +97,22 @@ main{
 
     .creations{
         margin: 150px 0 0 0;
-        .article-button{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "item1 item1 item2"
+        "item3 item3 item3" ;
+        row-gap: 60px;
             h1{
                 font-family: var(--font-secundary);
                 font-size: 3rem;
                 font-weight: 300;
+                grid-area: item1;
             }
             a{
+                grid-area: item2;
+                width: max-content;
+                margin-left: 46%;
                 color: var(--Black);
                 text-decoration: none;
                 font-family: var(--font-primary);
@@ -121,8 +126,8 @@ main{
                     border: 1px solid var(--White);
                 }
             }
-        }
         .article-itens{
+            grid-area: item3;
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
