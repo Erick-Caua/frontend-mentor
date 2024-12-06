@@ -1,3 +1,93 @@
+@media(max-width:2560px) {
+    header {
+        height: 50vh;
+    }
+
+    main {
+        .interactive-vr {
+            article {
+                padding: 150px 0 0 150px;
+                gap: 50px;
+
+                h1 {
+                    font-size: 5.4rem;
+                }
+
+                p {
+                    line-height: 20px;
+                    font-size: 2rem;
+                    letter-spacing: 5px;
+                    line-height: 47px;
+                }
+            }
+        }
+
+        .creations {
+            h1 {
+                font-size: 5rem;
+            }
+
+            a {
+                font-size: 2.4rem;
+                margin-left: 68%;
+            }
+
+            .article-itens {
+                gap: 70px;
+
+                .item {
+                    width: 512px;
+                    height: 900px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1440px) {
+    header {
+        height: 650px;
+    }
+
+    main {
+        .interactive-vr {
+            article {
+                padding: 80px 0 5px 80px;
+                gap: 30px;
+
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                p {
+                    line-height: 25px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .creations {
+            h1 {
+                font-size: 3rem;
+            }
+
+            a {
+                font-size: 1.3rem;
+                margin-left: 46%;
+            }
+
+            .article-itens {
+                gap: 30px;
+
+                .item {
+                    width: 256px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 1165px) {
     header {
         height: 450px;
@@ -203,35 +293,39 @@
                 h1 {
                     font-size: 1.7rem;
                 }
-                p{
+
+                p {
                     font-size: 12px;
                 }
             }
-            
+
         }
-        .creations{
-            h1{
+
+        .creations {
+            h1 {
                 font-size: 1.7rem;
             }
         }
     }
 
-    footer{
-        .nav-footer{
-            img{
+    footer {
+        .nav-footer {
+            img {
                 width: 150px;
             }
         }
-        p{
+
+        p {
             font-size: 12px;
         }
     }
 }
 
-@media(max-width:355px ){
-    header{
+@media(max-width:355px) {
+    header {
         padding: 30px;
-        p{
+
+        p {
             margin-top: 100%;
             font-size: 2rem;
             width: 260px;
