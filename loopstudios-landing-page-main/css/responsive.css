@@ -14,7 +14,6 @@
                 }
 
                 p {
-                    line-height: 20px;
                     font-size: 2rem;
                     letter-spacing: 5px;
                     line-height: 47px;
@@ -43,8 +42,46 @@
         }
     }
 }
+@media(max-width:2200px){
+    main {
+        .interactive-vr {
+            article {
+                padding: 80px 0 0 80px;
+                gap: 50px;
 
-@media(max-width:1440px) {
+                h1 {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                    letter-spacing: 5px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .creations {
+            h1 {
+                font-size: 4rem;
+            }
+
+            a {
+                font-size: 2rem;
+                margin-left: 68%;
+            }
+
+            .article-itens {
+                gap: 40px;
+
+                .item {
+                    width: 384px;
+                    height: 665px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1550px) {
     header {
         height: 650px;
     }
@@ -88,7 +125,7 @@
     }
 }
 
-@media(max-width: 1165px) {
+@media(max-width: 1200px) {
     header {
         height: 450px;
 
