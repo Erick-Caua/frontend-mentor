@@ -9,3 +9,5 @@
 <a href="https://erick-caua.github.io/frontend-mentor/recipe-page-main/" target="_blank"> Acesse Recipe Page Frontend Mentor</a>
 
 <a href="https://erick-caua.github.io/frontend-mentor/nft-preview-card-component-main/" target="_blank"> Acesse NFT Preview Frontend Mentor</a>
+
+<a href="https://erick-caua.github.io/frontend-mentor/loopstudios-landing-page-main/" target="_blank"> Acesse Loopstudios landing page Frontend Mentor</a>
