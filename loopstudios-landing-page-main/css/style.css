@@ -15,7 +15,7 @@
     --Very-Dark-Gray: hsl(0, 0%, 41%);
 }
 
-header {
+.header-desk {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: cover;
     background-position: center;
@@ -28,20 +28,25 @@ header {
         justify-content: space-between;
         font-family: var(--font-primary);
         font-size: 15px;
+
         .logo-header {
             width: 200px;
+            margin-top: auto;
         }
-        nav{
+
+        nav {
             display: flex;
             gap: 35px;
         }
-        a{
+
+        a {
             color: var(--White);
             height: 27px;
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: .6s;
-            &:hover{
+
+            &:hover {
                 border-bottom: 1px solid var(--White);
             }
         }
@@ -49,6 +54,11 @@ header {
 
     .icon-nav {
         display: none;
+        background-image: url(../images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:30px ;
+        height: 20px;
     }
 
     p {
@@ -63,15 +73,18 @@ header {
 
 }
 
-main{
+main {
     padding: 150px;
-    .interactive-vr{
+
+    .interactive-vr {
         display: flex;
         position: relative;
-        img{
+
+        img {
             width: 65%;
         }
-        article{
+
+        article {
             position: absolute;
             top: 40%;
             left: 45%;
@@ -80,62 +93,70 @@ main{
             flex-direction: column;
             gap: 30px;
             letter-spacing: 2px;
-            h1{
+
+            h1 {
                 font-family: var(--font-secundary);
                 font-size: 2.8rem;
                 font-weight: 300;
             }
-            p{
+
+            p {
                 font-family: var(--font-primary);
                 color: var(--Very-Dark-Gray);
             }
         }
     }
 
-    .creations{
+    .creations {
         margin: 150px 0 0 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "item1 item1 item2"
-        "item3 item3 item3" ;
+        grid-template-areas:
+            "item1 item1 item2"
+            "item3 item3 item3";
         row-gap: 60px;
-            h1{
-                font-family: var(--font-secundary);
-                font-size: 3rem;
-                font-weight: 300;
-                grid-area: item1;
+
+        h1 {
+            font-family: var(--font-secundary);
+            font-size: 3rem;
+            font-weight: 300;
+            grid-area: item1;
+        }
+
+        a {
+            grid-area: item2;
+            width: max-content;
+            margin-left: 46%;
+            color: var(--Black);
+            text-decoration: none;
+            font-family: var(--font-primary);
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            border: 1px solid var(--Black);
+            padding: 10px 40px;
+
+            &:hover {
+                background-color: var(--Black);
+                color: var(--White);
+                border: 1px solid var(--White);
             }
-            a{
-                grid-area: item2;
-                width: max-content;
-                margin-left: 46%;
-                color: var(--Black);
-                text-decoration: none;
-                font-family: var(--font-primary);
-                font-size: 1.3rem;
-                letter-spacing: 4px;
-                border: 1px solid var(--Black);
-                padding: 10px 40px;
-                &:hover{
-                    background-color: var(--Black);
-                    color: var(--White);
-                    border: 1px solid var(--White);
-                }
-            }
-        .article-itens{
+        }
+
+        .article-itens {
             grid-area: item3;
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
-            .item{
+
+            .item {
                 width: 256px;
                 height: 450px;
                 position: relative;
                 background-repeat: no-repeat;
                 background-size: cover;
-                p{
+
+                p {
                     text-transform: uppercase;
                     color: var(--White);
                     position: absolute;
@@ -145,8 +166,9 @@ main{
                     font-size: 2rem;
                     width: 170px;
                 }
-                
+
             }
+
             .item::before {
                 content: '';
                 position: absolute;
@@ -159,85 +181,105 @@ main{
                 filter: opacity(0.6);
                 /* Aplica transparência inicial */
             }
-            .item:hover::before{
+
+            .item:hover::before {
                 opacity: 1;
             }
-            .item:hover{
-                p{
+
+            .item:hover {
+                p {
                     color: black;
                 }
             }
-            .item-1{
+
+            .item-1 {
                 background-image: url(../images/desktop/image-deep-earth.jpg);
             }
-            .item-2{
+
+            .item-2 {
                 background-image: url(../images/desktop/image-night-arcade.jpg);
             }
-            .item-3{
+
+            .item-3 {
                 background-image: url(../images/desktop/image-soccer-team.jpg);
             }
-            .item-4{
+
+            .item-4 {
                 background-image: url(../images/desktop/image-grid.jpg);
             }
-            .item-5{
+
+            .item-5 {
                 background-image: url(../images/desktop/image-from-above.jpg);
             }
-            .item-6{
+
+            .item-6 {
                 background-image: url(../images/desktop/image-pocket-borealis.jpg);
             }
-            .item-7{
+
+            .item-7 {
                 background-image: url(../images/desktop/image-curiosity.jpg);
             }
-            .item-8{
+
+            .item-8 {
                 background-image: url(../images/desktop/image-fisheye.jpg);
             }
         }
     }
 }
-footer{
+
+footer {
     background-color: var(--Black);
     display: flex;
     justify-content: space-between;
     padding: 30px 150px;
     color: var(--Very-Dark-Gray);
     font-family: var(--font-primary);
-    .nav-footer{
+
+    .nav-footer {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        img{
+
+        img {
             width: 200px;
         }
-        nav{
+
+        nav {
             display: flex;
             gap: 20px;
         }
-        a{
+
+        a {
             color: var(--White);
             text-decoration: none;
             letter-spacing: 2px;
             border-bottom: 1px solid transparent;
             transition: .6s;
             padding-bottom: 5px;
-            &:hover{
+
+            &:hover {
                 border-bottom: 1px solid var(--White);
             }
         }
     }
-    .links{
+
+    .links {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        div{
+
+        div {
             display: flex;
             gap: 25px;
             justify-content: end;
-            img{
+
+            img {
                 border-bottom: 1px solid transparent;
                 transition: .6s;
                 padding-bottom: 5px;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     border-bottom: 1px solid var(--White);
                 }
 

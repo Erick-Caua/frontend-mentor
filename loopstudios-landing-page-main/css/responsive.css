@@ -1,10 +1,11 @@
 @media(max-width:2560px) {
-    header {
+    .header-desk {
         height: 50vh;
     }
 
     main {
         .interactive-vr {
+
             article {
                 padding: 150px 0 0 150px;
                 gap: 50px;
@@ -42,7 +43,8 @@
         }
     }
 }
-@media(max-width:2200px){
+
+@media(max-width:2200px) {
     main {
         .interactive-vr {
             article {
@@ -52,6 +54,7 @@
                 h1 {
                     font-size: 4rem;
                 }
+
                 p {
                     font-size: 1.4rem;
                     letter-spacing: 5px;
@@ -59,6 +62,7 @@
                 }
             }
         }
+
         .creations {
             h1 {
                 font-size: 4rem;
@@ -82,7 +86,7 @@
 }
 
 @media(max-width:1550px) {
-    header {
+    .header-desk {
         height: 650px;
     }
 
@@ -126,7 +130,7 @@
 }
 
 @media(max-width: 1200px) {
-    header {
+    .header-desk {
         height: 450px;
 
         p {
@@ -205,7 +209,7 @@
 }
 
 @media(max-width:1024px) {
-    header {
+    .header-desk {
         padding: 50px;
     }
 
@@ -267,20 +271,39 @@
 
 @media(max-width:780px) {
 
-    header {
+    .header-desk {
         background-image: url(../images/mobile/image-hero.jpg);
         height: 100vh;
 
         .icon-nav {
             display: block;
-            width: 30px;
+            width: 25px;
             background-color: transparent;
             border: transparent;
         }
 
         .header-nav {
-            a {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "item1 item1 item2"
+                "item3 item3 item3";
+
+            .logo-header {
+                grid-area: item1;
+                width: 130px;
+
+            }
+
+            button {
+                margin: auto;
+                grid-area: item2;
+                margin-left: 50%;
+            }
+
+            nav {
                 display: none;
+                grid-area: item3;
             }
         }
 
@@ -290,6 +313,33 @@
             margin-top: 40%;
         }
 
+    }
+
+    .header-mob {
+        background-color: var(--Black);
+        background-image: none;
+        font-family: var(--font-primary);
+
+        .header-nav {
+            nav {
+                margin-top: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                a {
+                    font-size: 1.5rem;
+
+                    &:hover {
+                        border-bottom: transparent;
+                    }
+                }
+            }
+        }
+
+        p {
+            display: none;
+        }
     }
 
     main {
@@ -315,7 +365,7 @@
 }
 
 @media(max-width:580px) {
-    header {
+    .header-desk {
         p {
             padding: 20px;
             font-size: 2.3rem;
@@ -359,7 +409,7 @@
 }
 
 @media(max-width:355px) {
-    header {
+    .header-desk {
         padding: 30px;
 
         p {
