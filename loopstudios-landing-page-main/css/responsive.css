@@ -336,6 +336,9 @@
                 }
             }
         }
+        .icon-nav{
+            background-image: url(../images/icon-close.svg);
+        }
 
         p {
             display: none;
