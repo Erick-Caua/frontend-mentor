@@ -7,6 +7,7 @@ module.exports = {
         LeagueSpartan:["League Spartan", "sans-serif"],
       }
     },
+    
   },
   plugins: [],
   corePlugins: {
