@@ -16,54 +16,54 @@
     <section id="backgroundSec"
       class="h-96 w-full md:w-3/5 md:h-full bg-no-repeat bg-cover bg-left-bottom p-4 relative">
       <div class="flex h-12 md:h-20  items-center md:pt-12 md:pl-10">
-        <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="md:hidden">
+        <img src="images/icon-hamburger.svg" alt="icon-hamburger" id="open-nav" class="md:hidden">
         <img src="images/logo.svg" alt="logo" class="m-auto w-20 md:m-0 md:mr-8">
         <nav class=" hidden md:flex gap-8  md:text-white ">
-          <a href="#">home</a>
-          <a href="#">shop</a>
-          <a href="#">about</a>
-          <a href="#">contact</a>
+          <a href="#" class="border-b-transparent hover:border-b-white hover:border-b">home</a>
+          <a href="#" class="border-b-transparent hover:border-b-white hover:border-b">shop</a>
+          <a href="#" class="border-b-transparent hover:border-b-white hover:border-b">about</a>
+          <a href="#" class="border-b-transparent hover:border-b-white hover:border-b">contact</a>
         </nav>
       </div>
-      <section class="absolute right-0 bottom-0 md:-right-20 bg-black py-4 w-20 flex items-center justify-center gap-6">
-        <button id="previous" class=""><img src="images/icon-angle-left.svg" alt="anterior"></button>
-        <button id="next" class=""><img src="images/icon-angle-right.svg" alt="proximo"></button>
+      <section class="absolute right-0 bottom-0 md:-right-20 bg-black w-20 flex">
+        <button id="previous" class="w-10 py-4 flex items-center justify-center hover:bg-gray-400/40"><img src="images/icon-angle-left.svg" alt="anterior"></button>
+        <button id="next" class="w-10 py-4 flex items-center justify-center hover:bg-gray-400/40"><img src="images/icon-angle-right.svg" alt="proximo"></button>
       </section>
     </section>
 
     <section class="px-8 py-10 md:w-2/5 md:px-14 lg:py-24">
       <article id="article-0" class="hidden">
         <h1 class="text-4xl font-bold xl:text-5xl">Discover innovative ways to decorate</h1>
-        <p class="mt-4 lg:mt-8 text-lg text-gray-400 xl:text-2xl">
+        <p class="mt-4 lg:mt-8 text-lg text-gray-400 xl:text-2xl h-60">
           We provide unmatched quality, comfort, and style for property owners across the country.
           Our experts combine form and function in bringing your vision to life. Create a room in your
           own style with our collection and make your property a reflection of you and what you love.
         </p>
-        <div class="flex items-center h-4 gap-8 my-8 lg:mt-14">
-          <a href="#" class="uppercase tracking-[0.5rem] font-semibold lg:text-2xl">Shop now</a>
+        <div class="flex items-center h-4 gap-8 my-8 lg:mt-14 hover:text-gray-400/40">
+          <a href="#" class="uppercase tracking-[0.5rem] font-semibold lg:text-2xl ">Shop now</a>
           <img src="images/icon-arrow.svg" alt="icon-arrow">
         </div>
       </article>
       <article id="article-1" class="hidden">
         <h1 class="text-4xl font-bold xl:text-5xl">We are available all across the globe</h1>
-        <p class="mt-4 lg:mt-8 text-lg text-gray-400 xl:text-2xl">
+        <p class="mt-4 lg:mt-8 text-lg text-gray-400 xl:text-2xl h-60">
           With stores all over the world, it's easy for you to find furniture for your home or place of business.
           Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
           store locator. Any questions? Don't hesitate to contact us today.
         </p>
-        <div class="flex items-center h-4 gap-8 my-8 lg:mt-14">
+        <div class="flex items-center h-4 gap-8 my-8 lg:mt-14 hover:text-gray-400/40">
           <a href="#" class="uppercase tracking-[0.5rem] font-semibold lg:text-2xl">Shop now</a>
           <img src="images/icon-arrow.svg" alt="icon-arrow">
         </div>
       </article>
       <article id="article-2" class="hidden">
         <h1 class="text-4xl font-bold xl:text-5xl">Manufactured with the best materials</h1>
-        <p class="mt-4 lg:mt-8 text-lg text-gray-400 xl:text-2xl">
+        <p class="mt-4 lg:mt-8 text-lg text-gray-400 xl:text-2xl h-60">
           Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
           to ensure that every product is made as perfect and as consistent as possible. With three decades of
           experience in this industry, we understand what customers want for their home and office.
         </p>
-        <div class="flex items-center h-4 gap-8 my-8 lg:mt-14">
+        <div class="flex items-center h-4 gap-8 my-8 lg:mt-14 hover:text-gray-400/40">
           <a href="#" class="uppercase tracking-[0.5rem] font-semibold lg:text-2xl">Shop now</a>
           <img src="images/icon-arrow.svg" alt="icon-arrow">
         </div>
@@ -90,7 +90,18 @@
 
     <img src="images/image-about-light.jpg" alt="image-about-light" class="w-full md:w-1/4">
   </section>
+  <div id="card-nav" class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] hidden">
+    <div class="bg-white h-28 w-full flex items-center justify-between px-10">
+      <img src="images/icon-close.svg" alt="icon-close" id="close-nav">
+      <nav class="flex gap-5 font-bold">
+        <a href="#">home</a>
+        <a href="#">shop</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </nav>
+    </div>
 
+  </div>
 </body>
 
 </html>

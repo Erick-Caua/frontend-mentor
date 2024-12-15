@@ -1,9 +1,33 @@
 const backgroundDiv = document.getElementById('backgroundSec');
 const previousButton = document.getElementById('previous');
 const nextButton = document.getElementById('next');
+
 const article0 = document.getElementById('article-0');
 const article1 = document.getElementById('article-1');
 const article2 = document.getElementById('article-2');
+
+const openNav = document.getElementById('open-nav');
+const closeNav = document.getElementById('close-nav');
+const cardNav = document.getElementById('card-nav');
+
+
+//Abrir nav
+openNav.addEventListener("click", () => {
+    cardNav.style.display = "flex"
+})
+
+
+// Fechar nav
+cardNav.addEventListener("click", (ev) => {
+    if (ev.target === cardNav) {
+        cardNav.style.display = "none"
+    }
+})
+
+closeNav.addEventListener("click", () => {
+    cardNav.style.display = "none"
+})
+
 
 // Array de imagens de fundo
 
