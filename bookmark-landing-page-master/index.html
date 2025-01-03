@@ -7,22 +7,38 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles/output.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script src="script/index.js" defer></script>
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 
 <body class="flex flex-col space-y-28 font-Rubik text-lg">
-  <header class="flex justify-between pt-10 px-7">
-    <img src="images/logo-bookmark.svg" alt="logo-bookmark">
-    <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="w-7">
 
-    <nav class="hidden">
+  <header class="flex justify-between pt-10 px-7">
+    <img src="images/logo-bookmark.svg" alt="logo-bookmark" class="w-48">
+    <img id="open-nav" src="images/icon-hamburger.svg" alt="icon-hamburger" class="w-7 sm:hidden">
+
+    <nav class="hidden sm:block">
       <a href="#">Features</a>
       <a href="#">Pricing</a>
       <a href="#">Contact</a>
       <a href="#">Login</a>
     </nav>
-
+    <div id="card-nav" class="hidden bg-VeryDarkBlueNav w-full h-full fixed top-0 left-0 z-[99] px-8 pt-10 flex-col">
+      <div class="flex justify-between items-center ">
+        <img src="images/logo-bookmark-white.svg" alt="logo-bookmark-white" class="w-48">
+        <img id="close-nav" src="images/icon-close.svg" alt="icon-close" class="h-6">
+      </div>
+      <nav class="flex flex-col text-3xl text-white text-center uppercase mt-14 tracking-widest">
+        <a href="#" class="p-3 m-3">Features</a>
+        <a href="#" class="p-3 m-3">Pricing</a>
+        <a href="#" class="p-3 m-3">Contact</a>
+        <a href="#" class="p-3 m-3">Login</a>
+      </nav>
+      <div class="flex space-x-7 items-center justify-center mt-20">
+        <img src="images/icon-facebook.svg" alt="icon-facebook">
+        <img src="images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+    </div>
   </header>
   <main class="space-y-28">
     <section class="flex flex-col-reverse">
@@ -35,9 +51,9 @@
           <a href="#" class="w-60 py-3 px-1 rounded-md shadow-lg bg-white-50 font-medium">Get it on Firefox</a>
         </div>
       </article>
-            <img src="images/image.png" alt="illustration-hero">
-            
-          
+      <img src="images/image.png" alt="illustration-hero">
+
+
     </section>
     <section class="text-center pt-7 space-y-5 px-7">
       <h2 class="text-3xl font-medium">Features</h2>
@@ -202,6 +218,7 @@
       </div>
     </article>
   </footer>
+
 </body>
 
 </html>

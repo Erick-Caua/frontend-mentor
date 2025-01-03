@@ -12,6 +12,7 @@ module.exports = {
       SoftRed:'hsl(var(--SoftRed))',
       GrayishBlue:'hsl(var(--GrayishBlue))',
       VeryDarkBlue:'hsl(var(--VeryDarkBlue))',
+      VeryDarkBlueNav:'hsl(var(--VeryDarkBlueNav))',
       'white': '#ffffff',
       'white-50': '#f8fafc',
     },
