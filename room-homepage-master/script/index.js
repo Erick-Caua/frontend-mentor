@@ -65,7 +65,6 @@ function updateBackground() {
             article1.style.display = "none"
             article2.style.display = "block"
             break;
-
     }
 }
 

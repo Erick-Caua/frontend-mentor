@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --SoftBlue: 231deg, 69%, 60%;
+        --SoftRed: 0deg, 94%, 66%;
+        --GrayishBlue: 229deg, 8%, 60%;
+        --VeryDarkBlue: 229deg, 31%, 21%;
+    }
+}
