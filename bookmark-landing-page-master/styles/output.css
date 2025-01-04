@@ -644,6 +644,22 @@ video {
   width: 100%;
 }
 
+.max-w-56{
+  max-width: 14rem;
+}
+
+.max-w-px{
+  max-width: 1px;
+}
+
+.max-w-64{
+  max-width: 16rem;
+}
+
+.max-w-96{
+  max-width: 24rem;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -825,6 +841,10 @@ video {
   text-align: center;
 }
 
+.text-start{
+  text-align: start;
+}
+
 .font-Rubik{
   font-family: Rubik, serif;
 }
@@ -889,5 +909,9 @@ video {
 @media (min-width: 768px){
   .md\:block{
     display: block;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 }
