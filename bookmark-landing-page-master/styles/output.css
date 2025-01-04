@@ -564,10 +564,6 @@ video {
   --VeryDarkBlueNav: 229deg, 31%, 21%, 0.91;
 }
 
-.static{
-  position: static;
-}
-
 .fixed{
   position: fixed;
 }
@@ -823,10 +819,6 @@ video {
 
 .pt-7{
   padding-top: 1.75rem;
-}
-
-.pt-14{
-  padding-top: 3.5rem;
 }
 
 .text-center{
