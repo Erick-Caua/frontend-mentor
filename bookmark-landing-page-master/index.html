@@ -41,19 +41,17 @@
     </div>
   </header>
   <main class="space-y-28">
-    <section class="flex flex-col-reverse">
-      <article class="flex flex-col text-center space-y-7 px-7 mt-6">
-        <h1 class="text-3xl font-medium">A Simple Bookmark Manager</h1>
-        <p class="text-GrayishBlue ">A clean and simple interface to organize your favourite websites.Open a new browser
+    <section class="flex flex-col-reverse md:flex-row justify-between">
+      <article class="flex flex-col text-center space-y-7 px-7 mt-6 max-w-lg">
+        <h1 class="text-3xl md:text-4xl md:text-start font-medium">A Simple Bookmark Manager</h1>
+        <p class="text-GrayishBlue md:text-start">A clean and simple interface to organize your favourite websites.Open a new browser
           tab and see your sites loadinstantly. Try it for free.</p>
         <div class="flex justify-center space-x-4 text-base">
           <a href="#" class="w-60 bg-SoftBlue text-white py-3 px-1 rounded-md font-medium">Get it on Chrome</a>
           <a href="#" class="w-60 py-3 px-1 rounded-md shadow-lg bg-white-50 font-medium">Get it on Firefox</a>
         </div>
       </article>
-      <img src="images/image.png" alt="illustration-hero">
-
-
+        <img src="images/image.png" alt="illustration-hero" class="md:min-h-96">
     </section>
     <section class="text-center pt-7 space-y-5 px-7">
       <h2 class="text-3xl font-medium">Features</h2>
@@ -63,36 +61,36 @@
       </p>
     </section>
     <section class="space-y-4">
-      <nav class="flex flex-col text-center border-t border-b border-GrayishBlue divide-y divide-GrayishBlue mb-14">
-        <button class="escolha py-4" value="simple">Simple Bookmarking</button>
-        <button class="escolha py-4 text-GrayishBlue" value="speedy">Speedy Searching</button>
-        <button class="escolha py-4 text-GrayishBlue" value="easy">Easy Sharing</button>
+      <nav class="max-w-4xl m-auto flex flex-col md:flex-row md:px-20 md:justify-between  text-center border-t md:border-t-transparent border-b border-GrayishBlue divide-y divide-GrayishBlue md:divide-transparent mb-14">
+        <button class="escolha py-4" value="simple"><span class=" border-b-4 border-SoftRed pb-4">Simple Bookmarking</span></button>
+        <button class="escolha py-4 text-GrayishBlue" value="speedy"><span class=" border-b-4 border-transparent pb-4">Speedy Searching</span></button>
+        <button class="escolha py-4 text-GrayishBlue" value="easy"><span class=" border-b-4 border-transparent pb-4">Easy Sharing</span></button>
       </nav>
-      <article id="article-0" class=" flex flex-col md:flex-row text-center pt-7 space-y-10 ">
-        <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1" class="max-w-96">
-        <div class="flex flex-col space-y-5 px-7 text-start">
-          <h2 class="text-3xl font-medium">Bookmark in one click</h2>
-          <p class="text-GrayishBlue ">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
+      <article id="article-0" class="flex flex-col md:flex-row text-center pt-7 space-y-10 ">
+        <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1" class="max-w-lg">
+        <div class="flex flex-col space-y-5 px-7 ">
+          <h2 class="text-3xl font-medium md:text-start">Bookmark in one click</h2>
+          <p class="text-GrayishBlue md:text-start">Organize your bookmarks however you like. Our simple drag-and-drop interface gives
             you complete control over
             how you manage your favourite sites.</p>
           <a href="#" class="hidden md:block w-40 bg-SoftBlue text-white p-4 rounded-md font-medium text-center">More Info</a>
         </div>
       </article>
       <article id="article-1" class="hidden flex-col md:flex-row text-center pt-7 space-y-10">
-        <img src="images/illustration-features-tab-2.svg" alt="illustration-features-tab-2" class="max-w-96">
-        <div class="flex flex-col space-y-5 px-7 text-start">
-          <h2 class="text-3xl font-medium">Intelligent search</h2>
-          <p class="text-GrayishBlue">Our powerful search feature will help you find saved sites in no time at all. No
+        <img src="images/illustration-features-tab-2.svg" alt="illustration-features-tab-2" class="max-w-lg">
+        <div class="flex flex-col space-y-5 px-7 ">
+          <h2 class="text-3xl font-medium md:text-start">Intelligent search</h2>
+          <p class="text-GrayishBlue md:text-start">Our powerful search feature will help you find saved sites in no time at all. No
             need to trawl through all of
             your bookmarks.</p>
           <a href="#" class="hidden md:block w-40 bg-SoftBlue text-white p-4 rounded-md font-medium text-center">More Info</a>
         </div>
       </article>
       <article id="article-2" class="hidden flex-col md:flex-row text-center pt-7 space-y-10">
-        <img src="images/illustration-features-tab-3.svg" alt="illustration-features-tab-3" class="max-w-96">
-        <div class="flex flex-col space-y-5 px-7 text-start">
-          <h2 class="text-3xl font-medium">Share your bookmarks</h2>
-          <p class="text-GrayishBlue">Easily share your bookmarks and collections with others. Create a shareable link
+        <img src="images/illustration-features-tab-3.svg" alt="illustration-features-tab-3" class="max-w-lg">
+        <div class="flex flex-col space-y-5 px-7 ">
+          <h2 class="text-3xl font-medium md:text-start">Share your bookmarks</h2>
+          <p class="text-GrayishBlue md:text-start">Easily share your bookmarks and collections with others. Create a shareable link
             that you can send at the
             click of a button.</p>
           <a href="#" class="hidden md:block w-40 bg-SoftBlue text-white p-4 rounded-md font-medium text-center">More Info</a>

@@ -15,6 +15,7 @@ module.exports = {
       VeryDarkBlueNav:'hsl(var(--VeryDarkBlueNav))',
       'white': '#ffffff',
       'white-50': '#f8fafc',
+      transparent: 'transparent',
     },
   },
   plugins: [],

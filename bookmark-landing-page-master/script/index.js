@@ -31,34 +31,43 @@ closeNav.addEventListener("click", () => {
 })
 
 //Simple - Speedy - Easy
-escolhas.forEach((botao) => {
-    botao.addEventListener('click', () => {
-        const valor = botao.value;
+const articles = [article0, article1, article2];
 
-        switch (valor) {
-            case 'simple':
-                article0.style.display = "flex"
-                article1.style.display = "none"
-                article2.style.display = "none"
-                break;
-            case 'speedy':
-                article0.style.display = "none"
-                article1.style.display = "flex"
-                article2.style.display = "none"
-                break;
-            case 'easy':
-                article0.style.display = "none"
-                article1.style.display = "none"
-                article2.style.display = "flex"
-                break;
+// Objeto para mapear valores aos índices dos artigos
+const indexMap = {
+    'simple': 0,
+    'speedy': 1,
+    'easy': 2
+};
 
+// Itera pelos botões
+escolhas.forEach((botaoClicado) => {
+    botaoClicado.addEventListener('click', () => {
+        const valor = botaoClicado.value;
 
-        }
-    })
-})
+        // Iterar sobre todos os botões
+        escolhas.forEach((btn) => {
+            const span = btn.querySelector("span");
+            if (btn === botaoClicado) {
+                // Remover a classe dos outros botões e adicionar ao botão clicado
+                btn.classList.remove('text-GrayishBlue');
+                span.classList.add('border-SoftRed')
+                span.classList.remove('border-transparent')
+            } else {
+                // Adicionar a classe aos outros botões e remover a classe do botão clicado
+                btn.classList.add('text-GrayishBlue');
+                span.classList.remove('border-SoftRed')
+                span.classList.add('border-transparent')
+            }
+        });
 
-
-
+        // Mostrar o artigo correspondente
+        const index = indexMap[valor];
+        articles.forEach((article, idx) => {
+            article.style.display = idx === index ? 'flex' : 'none';
+        });
+    });
+});
 
 
 // mostrar perguntas frequentes
