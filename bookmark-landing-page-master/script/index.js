@@ -10,6 +10,10 @@ const escolhas = document.querySelectorAll('.escolha');
 
 const duvidas = document.querySelectorAll('.duvida');
 
+const emailForm = document.getElementById('emailForm');
+const emailInput = document.getElementById('email');
+const message = document.getElementById('message');
+
 //Abrir nav
 openNav.addEventListener("click", () => {
     cardNav.style.display = "flex"
@@ -78,4 +82,22 @@ duvidas.forEach(function (div) {
         paragrafoResposta.classList.toggle('hidden')
     })
 
+});
+
+
+function validarEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+emailForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita o envio do formulário
+
+    const email = emailInput.value.trim();
+
+    if (validarEmail(email)) {
+        alert('ok')
+    } else {
+        alert('erro')
+    }
 });
