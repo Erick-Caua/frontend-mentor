@@ -10,9 +10,13 @@ const escolhas = document.querySelectorAll('.escolha');
 
 const duvidas = document.querySelectorAll('.duvida');
 
-const emailForm = document.getElementById('emailForm');
+const buttonForm = document.getElementById('buttonForm');
 const emailInput = document.getElementById('email');
 const message = document.getElementById('message');
+
+const input = document.getElementById('input')
+const imgErro = document.getElementById('img-erro')
+const menErro = document.getElementById('men-erro')
 
 //Abrir nav
 openNav.addEventListener("click", () => {
@@ -85,19 +89,31 @@ duvidas.forEach(function (div) {
 });
 
 
-function validarEmail(email) {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-}
 
-emailForm.addEventListener('submit', function (e) {
+
+buttonForm.addEventListener('click', function (e) {
     e.preventDefault(); // Evita o envio do formulário
 
     const email = emailInput.value.trim();
 
-    if (validarEmail(email)) {
-        alert('ok')
-    } else {
-        alert('erro')
-    }
+    // Função para validar o email -  retorna true ou false
+    const validarEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); 
+
+    // Função para atualizar classes de erro ou sucesso - isValid é uma variável boolean
+    const atualizarClasses = (isValid) => {
+        menErro.classList.toggle('hidden', isValid);
+        imgErro.classList.toggle('hidden', isValid);
+
+        input.classList.toggle('border-SoftRed', !isValid);
+        input.classList.toggle('bg-SoftRed', !isValid);
+
+        input.classList.toggle('border-Green', isValid);
+        input.classList.toggle('bg-Green', isValid);
+
+        // Remove a borda transparente apenas se for válido
+        if (isValid) input.classList.remove('border-transparent');
+    };
+
+    // Valida o email e atualiza as classes
+    atualizarClasses(validarEmail(email));
 });
