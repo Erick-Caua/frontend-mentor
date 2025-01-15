@@ -82,8 +82,12 @@ escolhas.forEach((botaoClicado) => {
 
 duvidas.forEach(function (div) {
     const paragrafoResposta = div.querySelector('.resposta');
+    const svg = div.querySelector('.svg')
+    const path = div.querySelector('.path')
     div.addEventListener('click', () => {
         paragrafoResposta.classList.toggle('hidden')
+        svg.classList.toggle('rotate-180')
+        path.classList.toggle('stroke-SoftRed')
     })
 
 });
