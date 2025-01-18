@@ -41,8 +41,8 @@
       </div>
     </div>
   </header>
-  <main class="space-y-28">
-    <section class="flex flex-col-reverse md:flex-row justify-center md:items-center">
+  <main class="space-y-28 overflow-hidden">
+    <section class="flex flex-col-reverse md:flex-row justify-center md:items-center xl:space-x-36">
       <article class="flex flex-col text-center space-y-7 px-6 mt-6  md:max-w-sm lg:max-w-md xl:max-w-lg">
         <h1 class="text-3xl lg:text-4xl md:text-start font-medium">A Simple Bookmark Manager</h1>
         <p class="text-GrayishBlue md:text-start">A clean and simple interface to organize your favourite websites.Open
@@ -60,7 +60,7 @@
       <div class="relative">
         <!-- Elemento de fundo -->
         <div
-          class="absolute bottom-0 -z-10 bg-SoftBlue rounded-s-full w-[86.6%]"
+          class="absolute bottom-0 -z-10 bg-SoftBlue rounded-s-full w-full"
           style="
             left: clamp(50px, 10vw, 150px); 
             height: clamp(200px, 25vw, 250px);">
@@ -77,7 +77,7 @@
         devices so you can access them on the go.
       </p>
     </section>
-    <section class="space-y-4">
+    <section class="space-y-4 xl:h-[550px]">
       <nav
         class="max-w-4xl m-auto flex flex-col md:flex-row md:px-20 md:justify-between  text-center border-t md:border-t-transparent border-b border-GrayishBlue divide-y divide-GrayishBlue md:divide-transparent mb-14">
         <button class="escolha py-4 hover:text-SoftRed" value="simple"><span
@@ -88,9 +88,25 @@
             class=" border-b-4 border-transparent pb-4">Easy Sharing</span></button>
       </nav>
       <article id="article-0"
-        class="flex flex-col md:flex-row text-center pt-7 space-y-10  items-center justify-center md:space-x-14">
+        class="flex flex-col md:flex-row text-center pt-7 space-y-10  items-center justify-center md:space-x-14 xl:space-x-28">
         
-          <img src="images/illustration-features-tab-1.svg" alt="illustration-features-tab-1">
+        <div class="relative pb-14">
+          <!-- Elemento de fundo -->
+          <div
+            class="absolute bottom-0 -z-10 bg-SoftBlue rounded-e-full w-full"
+            style="
+              right: clamp(50px, 10vw, 150px); 
+              height: clamp(200px, 25vw, 250px);">
+          </div>
+        
+          <!-- Conteúdo principal -->
+          <div class="relative flex justify-center items-center" style="height: calc(90% + 30px);">
+            <img 
+              src="images/illustration-features-tab-1.svg" 
+              alt="illustration-features-tab-1" 
+              class="w-[90%] mx-auto object-contain">
+          </div>
+        </div>
         
         <div class="flex flex-col space-y-5 px-7 md:max-w-sm lg:max-w-md xl:max-w-lg">
           <h2 class="text-3xl font-medium md:text-start">Bookmark in one click</h2>
@@ -103,8 +119,24 @@
         </div>
       </article>
       <article id="article-1"
-        class="hidden flex-col md:flex-row text-center pt-7 space-y-10 items-center justify-center space-x-14">
-        <img src="images/illustration-features-tab-2.svg" alt="illustration-features-tab-2">
+        class="hidden flex-col md:flex-row text-center pt-7 space-y-10 items-center justify-center space-x-14 xl:space-x-44">
+        <div class="relative pb-8">
+          <!-- Elemento de fundo -->
+          <div
+            class="absolute bottom-0 -z-10 bg-SoftBlue rounded-e-full w-full"
+            style="
+              right: clamp(50px, 10vw, 150px); 
+              height: clamp(200px, 25vw, 250px);">
+          </div>
+        
+          <!-- Conteúdo principal -->
+          <div class="relative flex justify-center items-center" style="height: calc(90% + 30px);">
+            <img 
+              src="images/illustration-features-tab-2.svg" 
+              alt="illustration-features-tab-2" 
+              class="w-[90%] mx-auto object-contain">
+          </div>
+        </div>
         <div class="flex flex-col space-y-5 px-7 md:max-w-sm lg:max-w-md xl:max-w-lg">
           <h2 class="text-3xl font-medium md:text-start">Intelligent search</h2>
           <p class="text-GrayishBlue md:text-start">Our powerful search feature will help you find saved sites in no
@@ -116,8 +148,24 @@
         </div>
       </article>
       <article id="article-2"
-        class="hidden flex-col md:flex-row text-center pt-7 space-y-10 items-center justify-center space-x-14">
-        <img src="images/illustration-features-tab-3.svg" alt="illustration-features-tab-3">
+        class="hidden flex-col md:flex-row text-center pt-7 space-y-10 items-center justify-center space-x-14 xl:space-x-52">
+        <div class="relative pb-14">
+          <!-- Elemento de fundo -->
+          <div
+            class="absolute bottom-0 -z-10 bg-SoftBlue rounded-e-full w-full"
+            style="
+              right: clamp(50px, 10vw, 150px); 
+              height: clamp(200px, 25vw, 250px);">
+          </div>
+        
+          <!-- Conteúdo principal -->
+          <div class="relative flex justify-center items-center" style="height: calc(90% + 30px);">
+            <img 
+              src="images/illustration-features-tab-3.svg" 
+              alt="illustration-features-tab-3" 
+              class="w-[90%] mx-auto object-contain">
+          </div>
+        </div>
         <div class="flex flex-col space-y-5 px-7 md:max-w-sm lg:max-w-md xl:max-w-lg">
           <h2 class="text-3xl font-medium md:text-start">Share your bookmarks</h2>
           <p class="text-GrayishBlue md:text-start">Easily share your bookmarks and collections with others. Create a
