@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --DarkCyan: hsl(158, 36%, 37%);
+    --DarkCyanHover: hsl(159, 27%, 23%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: 'Montserrat', serif;
+    background-color: var(--Cream);
+}
+
+section {
+    margin: auto;
+    width: 335px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img-product {
+    background-image: url(../images/image-product-mobile.jpg);
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product {
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1,
+.preco {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+
+
+h3,
+.product>p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--DarkGrayishBlue);
+}
+
+.preco {
+    margin: 15px 0 10px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .preco1 {
+        font-size: 32px;
+        color: var(--DarkCyan);
+    }
+
+    ;
+
+    .preco2 {
+        color: var(--DarkGrayishBlue);
+        text-decoration: line-through;
+        font-weight: 500;
+        font-family: 'Montserrat', serif;
+    }
+}
+
+button {
+    background-color: var(--DarkCyan);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--White);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    svg {
+        width: 15px;
+    }
+}
+
+@media(min-width: 768px) {
+    section {
+        width: 600px;
+        height: 400px;
+        flex-direction: row;
+    }
+
+    .img-product {
+        background-image: url(../images/image-product-desktop.jpg);
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .product{
+        width: 50%;
+    }
+    button:hover{
+        background-color: var(--DarkCyanHover);
+    }
+}
