@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    margin: 40px auto;
+    width: 320px;
+    text-align: center;
+    h2 {
+        font-weight: 200;
+        color: var(--VeryDarkBlue);
+    }
+    h1{
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    p {
+        color: var(--GrayishBlue);
+        font-size: 15px;
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+article{
+    width: 320px;
+    height: 200px;
+    box-shadow: 1px 2px 9px var(--GrayishBlue);
+    border-radius: 5px;
+    padding: 20px;
+    h3{
+        font-weight:600;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 13px;
+        color: var(--GrayishBlue);
+    }
+    img{
+        margin-left: 78%;
+        margin-top: 9%;
+        height: 50px;
+    }
+}
+.supervisor{
+    border-top: 4px solid var(--Cyan);
+}
+.teamBuilder{
+    border-top: 4px solid var(--Red);
+}
+.karma{
+    border-top: 4px solid var(--Orange);
+}
+.calculator{
+    border-top: 4px solid var(--Blue);
+}
+
+@media(min-width: 1024px){
+    
+    .header{
+        width: 500px;
+    }
+
+    .main{
+        width: min-content;
+        margin: 60px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        grid-template-rows: minmax(80px);
+        grid-template-areas:
+        "item1 item2 item4"
+        "item1 item3 item4";
+    }
+    .supervisor{
+        grid-area: item1;
+    }
+    .teamBuilder{
+        grid-area: item2;
+    }
+    .karma{
+        grid-area: item3;
+    }
+    .calculator{
+        grid-area: item4;
+    }
+    
+}
