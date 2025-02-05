@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ModerateViolet: hsl(263, 55%, 52%);
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--LightGrayishBlue);
+}
+
+section {
+    margin: auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    width: 330px;
+    padding: 20px 57px 30px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .info {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        img {
+            border-radius: 100%;
+            width: 35px;
+        }
+        .name{
+            font-weight: 500;
+            color: var(--White);
+        }
+        .verified{
+            color: var(--LightGray);
+            font-size: 13px;
+        }
+    }
+    h3{
+        font-weight: 600;
+        z-index: 1;
+        color: var(--LightGrayishBlue);
+    }
+    p{
+        font-size: 13px;
+        color: var(--LightGray);
+    }
+
+}
+.bg-img{
+    width: 100px;
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+.Daniel{
+    position: relative;
+    background-color: var(--ModerateViolet);
+}
+.jonathan{
+    background-color: var(--VeryDarkGrayishBlue);
+}
+.jeanette, .kira{
+    background-color: var(--White);
+    .info{
+        .name{
+        color: #000000;
+    }
+    }
+    
+    h3{
+        color: #000000;
+    }
+    p{
+        color: var(--VeryDarkGrayishBlue);
+    }
+}
+
+.patrick{
+    background-color: var(--VeryDarkBlackishBlue);
+    .info{
+    img{
+        border: 2px solid var(--ModerateViolet);
+    }
+    }
+}
+
