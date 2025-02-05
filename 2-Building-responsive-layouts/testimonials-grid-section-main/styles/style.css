@@ -76,6 +76,7 @@ article {
 .Daniel{
     position: relative;
     background-color: var(--ModerateViolet);
+    margin-top: 60px;
 }
 .jonathan{
     background-color: var(--VeryDarkGrayishBlue);
@@ -103,5 +104,8 @@ article {
         border: 2px solid var(--ModerateViolet);
     }
     }
+}
+.kira{
+    margin-bottom: 50px;
 }
 
