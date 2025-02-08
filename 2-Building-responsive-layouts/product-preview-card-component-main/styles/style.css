@@ -47,7 +47,7 @@ section {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
 }
 
 h1,
@@ -57,7 +57,7 @@ h1,
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 
@@ -65,8 +65,14 @@ h1 {
 h3,
 .product>p {
     font-weight: 500;
-    font-size: 14px;
     color: var(--DarkGrayishBlue);
+}
+h3{
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.product>p{
+    font-size: 14px;
 }
 
 .preco {
@@ -93,7 +99,7 @@ h3,
 button {
     background-color: var(--DarkCyan);
     border: none;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     color: var(--White);
     font-weight: 700;
@@ -108,7 +114,7 @@ button {
 
 @media(min-width: 768px) {
     section {
-        width: 600px;
+        width: 530px;
         height: 400px;
         flex-direction: row;
     }
