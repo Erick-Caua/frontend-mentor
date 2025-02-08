@@ -19,6 +19,7 @@ body {
     height: 100vh;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--LightGrayishBlue);
+    display: flex;
 }
 
 section {
@@ -36,7 +37,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
     .info {
         display: flex;
         gap: 20px;
@@ -46,66 +47,112 @@ article {
             border-radius: 100%;
             width: 35px;
         }
-        .name{
+
+        .name {
             font-weight: 500;
             color: var(--White);
         }
-        .verified{
+
+        .verified {
             color: var(--LightGray);
             font-size: 13px;
         }
     }
-    h3{
+
+    h3 {
         font-weight: 600;
         z-index: 1;
         color: var(--LightGrayishBlue);
     }
-    p{
+
+    p {
         font-size: 13px;
         color: var(--LightGray);
     }
 
 }
-.bg-img{
+
+.bg-img {
     width: 100px;
     position: absolute;
     right: 10%;
     top: 0;
 }
 
-.Daniel{
+.Daniel {
     position: relative;
     background-color: var(--ModerateViolet);
     margin-top: 60px;
 }
-.jonathan{
+
+.jonathan {
     background-color: var(--VeryDarkGrayishBlue);
 }
-.jeanette, .kira{
+
+.jeanette,
+.kira {
     background-color: var(--White);
-    .info{
-        .name{
+
+    .info {
+        .name {
+            color: #000000;
+        }
+    }
+
+    h3 {
         color: #000000;
     }
-    }
-    
-    h3{
-        color: #000000;
-    }
-    p{
+
+    p {
         color: var(--VeryDarkGrayishBlue);
     }
 }
 
-.patrick{
+.patrick {
     background-color: var(--VeryDarkBlackishBlue);
-    .info{
-    img{
-        border: 2px solid var(--ModerateViolet);
-    }
+
+    .info {
+        img {
+            border: 2px solid var(--ModerateViolet);
+        }
     }
 }
-.kira{
+
+.kira {
     margin-bottom: 50px;
 }
 
+@media (min-width: 1024px) {
+    section {
+        display: grid;
+        width: min-content;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows:290px;
+        grid-template-areas:
+        "item1 item1 item2 item5"
+        "item3 item4 item4 item5";
+        
+    }
+    article{
+        width: 270px;
+    }
+    .Daniel{
+        grid-area: item1;
+        width: auto;
+        margin-top: 0;
+    }
+    .jonathan{
+        grid-area: item2;
+    }
+    .jeanette{
+        grid-area: item3;
+    }
+    .patrick{
+        grid-area: item4;
+        width: auto;
+    }
+    .kira{
+        grid-area: item5;
+        margin-bottom: 0;
+    }
+}
