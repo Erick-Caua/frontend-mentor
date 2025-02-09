@@ -92,7 +92,7 @@ article {
 .jeanette,
 .kira {
     background-color: var(--White);
-
+    box-shadow: 1px 5px 20px var(--VeryDarkGrayishBlue);
     .info {
         .name {
             color: #000000;
@@ -120,6 +120,7 @@ article {
 
 .kira {
     margin-bottom: 50px;
+    
 }
 
 @media (min-width: 1024px) {
