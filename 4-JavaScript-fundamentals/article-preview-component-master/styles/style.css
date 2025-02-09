@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LightGrayishBlue);
+}
+
+section {
+    width: 375px;
+    height: 580px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+}
+
+.img {
+    height: 40%;
+    background-image: url(../images/drawers.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px 10px 0 0;
+}
+
+article {
+    padding: 40px 45px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+        color: var(--VeryDarkGrayishBlue);
+    }
+}
+
+p {
+    color: var(--DesaturatedDarkBlue);
+}
+
+.info-user {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-user .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-user .user-img {
+    height: 50px;
+    border-radius: 100%;
+}
+
+.info-user .share {
+    width: 30px;
+    height: 30px;
+    background-color: var(--LightGrayishBlue);
+    border-radius: 100%;
+    background-image: url(../images/icon-share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+}
+nav {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--VeryDarkGrayishBlue);
+
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease;
+    pointer-events: none;
+    align-items: center;
+    gap: 20px;
+    
+    button {
+        background-color: var(--VeryDarkGrayishBlue);
+        border: none;
+    }
+    p{
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+}
+.ativo{
+    display: flex;
+    opacity: 1;
+}
