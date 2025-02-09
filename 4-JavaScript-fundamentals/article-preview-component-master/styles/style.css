@@ -89,6 +89,7 @@ p {
     background-position: center;
     z-index: 99;
 }
+
 nav {
     position: absolute;
     padding-left: 20px;
@@ -105,17 +106,63 @@ nav {
     pointer-events: none;
     align-items: center;
     gap: 20px;
-    
+
     button {
         background-color: var(--VeryDarkGrayishBlue);
         border: none;
     }
-    p{
+
+    p {
         letter-spacing: 2px;
         font-weight: 700;
     }
 }
-.ativo{
+
+.ativo {
     display: flex;
     opacity: 1;
+}
+
+@media (min-width: 1024px) {
+    section {
+        width: 800px;
+        height: 340px;
+        flex-direction: row;
+    }
+
+    .img {
+        width: 40%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+        background-position: left;
+    }
+
+    article {
+        width: 60%;
+        padding: 40px 25px 0 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding-left: 20px;
+        top: 58%;
+        left: 80.5%;
+        height: 60px;
+        width: 230px;
+        border-radius: 10px;
+    }
+    nav::after {
+        content: "";
+        position: absolute;
+        bottom: -9px; /* Distância do triângulo em relação à div */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 10px;
+        background-color: var(--VeryDarkGrayishBlue);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
 }
