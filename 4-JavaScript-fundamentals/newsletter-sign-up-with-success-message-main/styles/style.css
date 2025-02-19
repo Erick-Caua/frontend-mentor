@@ -27,9 +27,18 @@
     --White: hsl(0, 0%, 100%);
     --Tomato: hsl(4, 100%, 67%);
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
+    height: 100vh;
+    background-color: var(--CharcoalGrey);
+}
+
+.main {
+    display: block;
+    width: 100%;
+    height: 100vh;
 }
 
 .page-main {
@@ -39,7 +48,15 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+.img{
+    height: 30%;
+    width: 100%;
+    background-image: url(../assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px;
 
+}
 
 
 h1 {
@@ -84,7 +101,12 @@ input {
     border: 1px solid var(--Grey);
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border: 1px solid var(--DarkSlateGrey);
+    outline: none;
 }
 
 button {
@@ -97,4 +119,63 @@ button {
 
 .success {
     display: none;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.success>img {
+    height: 65px;
+    margin-top: 40%;
+}
+
+.success>h1 {
+    margin-top: 40px;
+}
+
+.success>p {
+    margin-top: 30px;
+}
+
+.success>button {
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+}
+
+.success>p>span {
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    body{
+        align-items: center;
+    }
+    .main{
+        min-width: 760px;
+        max-width: 850px;
+        height: 550px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .img{
+        background-image: url(../assets/images/illustration-sign-up-desktop.svg);
+        height: 100%;
+        width: 45%;
+        border-radius: 20px;
+    }
+    .page-main{
+        width: 55%;
+        margin: auto;
+    }
+
+    button:hover{
+        background-image: linear-gradient(45deg, #FF5474, var(--Tomato), #FF683F);
+        cursor: pointer;
+    }
 }
