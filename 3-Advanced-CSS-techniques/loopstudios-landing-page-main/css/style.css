@@ -15,6 +15,10 @@
     --Very-Dark-Gray: hsl(0, 0%, 41%);
 }
 
+body{
+max-width: 1440px;
+}
+
 .header-desk {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: cover;
